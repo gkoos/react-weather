@@ -1,10 +1,23 @@
 var React = require('react');
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link;
 
 var Examples = (props) => {
     return (
         <div>
-            <h3>Examples</h3>
-            <p>Welcome to examples page!</p>
+            <h1 className="text-center">Examples</h1>
+            <p>Here are a few example locations to try out:</p>
+            <ol>
+                <li>
+                    <Link to="/?location=London">London</Link>
+                </li>
+                <li>
+                    <Link to="/?location=Budapest">Budapest</Link>
+                </li>
+                <li>
+                    <Link to="/?location=Los Angeles">Los Angeles, CA</Link>
+                </li>
+            </ol>
         </div>
     );
 }
